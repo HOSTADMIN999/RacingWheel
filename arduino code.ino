@@ -6,7 +6,11 @@ void setup() {
 
 }
 
+int AnalogInputToAngle(int Value) {
+  return 0.135*(511.5-value);
+}
+
 void loop() {
   sensorValue = analogRead(sensorPin);
-  
+  if(analogInputToAngle(sensorValue) < 0); 
 }
