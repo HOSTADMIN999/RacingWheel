@@ -12,5 +12,10 @@ int AnalogInputToAngle(int Value) {
 
 void loop() {
   sensorValue = analogRead(sensorPin);
-  if(analogInputToAngle(sensorValue) < 0); 
+  if(analogInputToAngle(sensorValue) < -5) {
+    Keyboard.print(key[1]);
+  }
+  if(analogInputTo(sensorValue) > 5) {
+    Keyboard.prints(Key[2]);
+  }
 }
